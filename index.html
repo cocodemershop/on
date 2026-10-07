@@ -7,15 +7,26 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Mindshift">
-<meta name="application-name" content="21 Tage Mindshift">
-<meta name="description" content="21 Tage Transformation: Tarot-Programm, Kartenlexikon, Legemethoden und Familienkreis.">
+<meta name="apple-mobile-web-app-title" content="Kartenreich">
+<meta name="application-name" content="Kartenreich">
+<meta name="description" content="Tarot neu entdecken: Ziehe Karten, lerne 78 Tarotkarten kennen und starte deine persönliche 21-Tage-Reise. Mit Kartenlexikon, Legemethoden, Tagebuch und persönlichem Kartenkreis.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://cocodemershop.github.io/tarot/">
+<meta property="og:url" content="https://cocodemershop.github.io/tarot/">
+<meta property="og:image" content="https://cocodemershop.github.io/tarot/cards/g0.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Kartenreich">
+<meta property="og:title" content="Kartenreich – 21 Tage. 78 Karten. Ein anderer Blick auf dich.">
+<meta property="og:description" content="Ziehe deine erste Karte kostenlos und starte deine persönliche 21-Tage-Reise mit Kartenlexikon, Legemethoden und Tagebuch.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Kartenreich – 21 Tage Transformation","description":"Tarot als Spiegel: 78 Karten, 21-Tage-Programm, Kartenlexikon, Legemethoden, Tagebuch und Kartenkreis.","inLanguage":"de","applicationCategory":"LifestyleApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"Michaela Schäfer"}}</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0e0817">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<title>21 Tage Transformation – Karten legen Mindshift</title>
+<title>Tarot Karten legen – 21 Tage Transformation | Kartenreich</title>
 <style>
 :root{--bg:#0e0817;--card:#1a1127;--ink:#ece3f2;--mute:#a998b8;--g:#e8b45a;--ok:#7ee0b5;--bad:#ff7a8a;--line:#3a2b4d;--dk:#1a1024;
 padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
@@ -565,15 +576,57 @@ a.btn{text-decoration:none}
 @keyframes zdust{0%{opacity:0;transform:translate(0,0) scale(.4)}20%{opacity:.95}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.2)}}
 @media (prefers-reduced-motion:reduce){.zc,.zm{transition:none}}
 </style>
+<style id="navfix">
+/* Übersichtliche Navigation: Mac/MacBook/iPad oben, iPhone unten */
+nav.tabs{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:center;gap:4px;flex-wrap:nowrap;overflow:visible!important;white-space:normal;margin:-8px -16px 26px;padding:8px 16px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+nav.tabs button{margin:0;border:0;border-radius:99px;padding:9px 16px;min-height:40px;font:600 .92rem "Instrument Sans",system-ui,sans-serif;color:var(--mute);background:none;white-space:nowrap}
+nav.tabs button:hover{background:color-mix(in srgb,var(--g) 10%,transparent);color:var(--ink)}
+nav.tabs button[aria-selected="true"]{color:var(--dk);background:var(--g);border:0}
+nav.tabs .f{display:inline}nav.tabs .s{display:none}
+nav.tabs #ttr{border:1px solid var(--g);color:var(--g);background:color-mix(in srgb,var(--g) 12%,transparent);margin-left:6px}
+nav.tabs #ttr:hover{background:var(--g);color:var(--dk)}
+nav.tabs #tmo{border:1px solid var(--line)}
+nav.tabs .mw{position:relative}
+.mp{z-index:140;position:absolute;top:calc(100% + 8px);right:0;min-width:240px;display:flex;flex-direction:column;gap:2px;padding:8px;border:1px solid var(--g);border-radius:16px;background:var(--bg);box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.mp[hidden]{display:none}
+.mp button{text-align:left;border-radius:10px;width:100%;margin:0;border:0;background:none;color:var(--mute);font:600 .95rem "Instrument Sans",system-ui,sans-serif;padding:11px 14px;min-height:44px;cursor:pointer}.mp button:hover{background:color-mix(in srgb,var(--g) 10%,transparent);color:var(--ink)}
+.mp #ttr{background:var(--g);color:var(--dk);margin:0 0 4px;border:0}
+.prog{top:calc(var(--nh,58px) + env(safe-area-inset-top,0px))!important}
+@media (max-width:900px){
+ nav.tabs{position:fixed!important;top:auto!important;bottom:0;left:0;right:0;margin:0!important;z-index:130;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))!important;border-top:1px solid var(--g);border-bottom:0;background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+ nav.tabs>button,nav.tabs .mw>button#tmo{min-width:0;width:100%;margin:0!important;padding:8px 2px;min-height:50px;border-radius:12px;font-size:.72rem;line-height:1.15;text-align:center;border:0}
+ nav.tabs .mw{min-width:0;margin:0}
+ nav.tabs .f{display:none}nav.tabs .s{display:inline}
+ .mp{position:fixed;top:auto;left:10px;right:10px;bottom:calc(68px + env(safe-area-inset-bottom,0px));min-width:0;z-index:140}
+ .mp button{font-size:1rem;padding:13px 16px;min-height:48px}
+ .wrap{padding-bottom:120px}
+ .snd{bottom:calc(78px + env(safe-area-inset-bottom,0px))!important}
+ .ck{bottom:calc(66px + env(safe-area-inset-bottom,0px))!important;padding-bottom:14px!important;z-index:125}
+ .prog{top:env(safe-area-inset-top,0px)!important}
+ .hd h1{font-size:clamp(1.7rem,8vw,2.6rem)}
+ .bar{padding:8px 12px;font-size:.8rem;gap:4px 12px}.bar span:nth-child(2){display:none}
+}
+@media (min-width:901px) and (max-width:1100px){nav.tabs button{padding:9px 11px;font-size:.86rem}}
+</style>
 </head>
 <body>
 <div class="wrap">
-<div class="bar"><span><b>●</b> Dein Kartenraum ist offen</span><span>21 Tage Transformation – Karten legen Mindshift</span></div>
-<nav class="tabs" role="tablist" aria-label="Bereiche"><button role="tab" id="tp" aria-selected="true">21-Tage-Programm</button><button role="tab" id="tk" aria-selected="false">Kartenlexikon</button><button role="tab" id="tf" aria-selected="false">Familienkreis</button><button role="tab" id="tl" aria-selected="false">Legemethoden</button></nav>
+<div class="bar"><span><b>●</b> Dein Kartenraum ist offen</span><span>Kartenreich · 21 Tage · 78 Karten</span></div>
+<nav class="tabs" role="tablist" aria-label="Bereiche"><button role="tab" id="tp" aria-selected="true">21-Tage-Programm</button><button role="tab" id="tk" aria-selected="false">Kartenlexikon</button><button role="tab" id="tf" aria-selected="false">Kartenkreis</button><button role="tab" id="tl" aria-selected="false">Legemethoden</button></nav>
 <header class="hd">
-  <h1>21 Tage Transformation<br><span>Karten legen Mindshift</span></h1>
-  <p>Dein Fahrplan in drei Wochen: von der ersten Karte bis zur eigenen Deutung, mit Zeitstrahl, Tagebuch und persönlicher Auswertung.</p>
+  <div class="ey" style="letter-spacing:.35em;color:var(--g);font-size:.8rem;margin-bottom:10px">✦ KARTENREICH ✦</div>
+  <h1>21 Tage. 78 Karten.<br><span>Ein anderer Blick auf dich.</span></h1>
+  <p>Ziehe deine erste Karte und entdecke, was sie dir heute zeigen kann – dann beginne deine persönliche 21-Tage-Reise.</p>
+  <p style="font-size:.85rem;margin-top:10px">Kostenlos starten · keine Anmeldung · dein Kartenraum bleibt bei dir</p>
 </header>
+
+<div class="card" id="phasen"><h2>Deine Reise in drei Phasen</h2>
+<p class="p">Von der ersten Karte bis zur eigenen Deutung: Nicht die Karten entscheiden. Du entscheidest.</p>
+<div class="grid">
+<div class="it"><b>Tag 1–7 · Ich sehe</b>Du lernst, Bilder wahrzunehmen.</div>
+<div class="it"><b>Tag 8–14 · Ich verstehe</b>Du beginnst, Zusammenhänge zu erkennen.</div>
+<div class="it"><b>Tag 15–21 · Ich entscheide</b>Du nutzt die Karten für deine eigenen Fragen.</div>
+<div class="it"><b>Tag 21 · Dein Moment</b>„Jetzt kannst du deine Karten selbst lesen.“</div></div></div>
 
 <section class="orl" id="orloj" aria-labelledby="olt">
 <div class="ey">✦ Zeit der Sterne ✦</div>
@@ -619,7 +672,7 @@ a.btn{text-decoration:none}
 
 <div class="card" id="orc"><h2>Dein Orakel</h2><p class="p">Speichere dein Profil, dann spricht das Orakel zu dir: drei Karten, die aus deinem Namen, deinem Starttag und dem heutigen Tag entstehen. Du kannst sie an deine Liebsten senden.</p><button class="btn" id="ob">✦ Mein Orakel befragen</button><div class="msg" id="om"></div><div id="oo"></div></div>
 
-<div class="card dl"><h2>Dein Arbeitsbuch zum Download</h2><p class="p">Alle 21 Tage auf Papier: zum Ausdrucken oder Ausfüllen am Tablet.</p><button class="btn" id="pdo" type="button">✦ Arbeitsbuch öffnen</button></div>
+<div class="card dl"><h2>Dein 21-Tage-Journal zum Download</h2><p class="p">Alle 21 Tage auf Papier: zum Ausdrucken oder Ausfüllen am Tablet.</p><button class="btn" id="pdo" type="button">✦ Arbeitsbuch öffnen</button></div>
 <div class="card cta"><h3>Schalter umlegen &amp; starten</h3>
 <p class="p">Mit einem Klick aktivierst du dein Programm. Deine Fortschrittsanzeige springt an, und Tag 1 öffnet sich.</p>
 <button class="btn" id="sw"><span id="bt">Klick mich und dein Blick verändert sich</span><span id="bi">✦</span></button>
@@ -639,13 +692,13 @@ a.btn{text-decoration:none}
 <div class="nts"><label for="nt">Deine Notizen: <span id="nn"></span></label><textarea id="nt" placeholder="Was siehst du? Was fühlst du? Was bedeutet die Karte für dich heute?"></textarea><div id="ns"></div></div>
 </section>
 <section id="fam" hidden>
-<h2>Familienkreis</h2>
+<h2>Unser Kartenkreis</h2>
 <p class="p">Jeder Mensch trägt ein Sternzeichen, einen Aszendenten, eine Seelenkarte und ein Jahresthema in sich. Trage dich und die Menschen ein, die du liebst: Partner, Kinder, Eltern, Geschwister, Freunde. Mit Geburtszeit und Geburtsort berechnen wir auch den Aszendenten. Für jede und jeden entsteht eine eigene Geburtskarte zum Staunen, Schenken und Teilen.</p>
 <div class="fh rec"><h3>✦ Schenke es weiter</h3><p>Jede Geschichte wird schöner, wenn man sie teilt. Kennst du einen Menschen, dem 21 Tage Ruhe, Klarheit und ein Blick in die Sterne guttun würden? Sende ihm eine kleine Einladung, so persönlich wie ein Brief.</p><div class="shr"><button class="btn wa" data-s="wa" data-k="rec">WhatsApp</button><button class="btn tgm" data-s="tg" data-k="rec">Telegram</button><button class="btn o" data-s="sh" data-k="rec" id="frs">Teilen</button><button class="btn o" data-s="cp" data-k="rec">Einladung kopieren</button></div><small>Verschickt wird nur die Einladung. Namen, Geburtstage und Karten aus deinem Kreis bleiben bei dir, solange du sie nicht selbst sendest.</small></div>
 <div class="frm"><div><label for="fn1">Name</label><input id="fn1" maxlength="40" autocomplete="off" placeholder="z. B. Lena"></div><div><label for="fd1">Geburtstag</label><input id="fd1" type="date"></div><div><label for="fr1">Wer ist das?</label><select id="fr1"><option>Ich</option><option>Partner:in</option><option>Kind</option><option>Mutter / Vater</option><option>Geschwister</option><option>Großeltern</option><option>Freund:in</option></select></div><div><label for="ft1">Geburtszeit (für den Aszendenten)</label><input id="ft1" type="time"></div><div><label for="fo1">Geburtsort</label><select id="fo1"><option value="">– nicht angeben –</option></select></div><p class="p fhint">Optional. Den Aszendenten, den „aufsteigenden“ Teil deines Wesens, gibt es nur mit genauer Uhrzeit und Ort. Steht beides auf der Geburtsurkunde, trage es ein.</p><div class="fx" id="fxo" hidden><div><label for="fla">Breitengrad</label><input id="fla" type="number" step="0.01" min="-66" max="66" placeholder="z. B. 52.52"></div><div><label for="flo">Längengrad</label><input id="flo" type="number" step="0.01" min="-180" max="180" placeholder="z. B. 13.40"></div><div><label for="fof">UTC-Abweichung in Stunden</label><input id="fof" type="number" step="0.5" min="-12" max="14" placeholder="z. B. 1"></div></div><button class="btn" id="fadd">✦ Geburtskarte enthüllen</button></div>
 <div class="msg" id="fmsg" role="status"></div>
 <div id="fhm"></div><div id="flist"></div>
-<div class="shr"><span class="p" style="margin:0">Ganzen Familienkreis senden:</span><button class="btn wa" data-s="wa" data-k="fall">WhatsApp</button><button class="btn tgm" data-s="tg" data-k="fall">Telegram</button></div>
+<div class="shr"><span class="p" style="margin:0">Ganzen Kartenkreis senden:</span><button class="btn wa" data-s="wa" data-k="fall">WhatsApp</button><button class="btn tgm" data-s="tg" data-k="fall">Telegram</button></div>
 <p class="p" style="text-align:center;font-size:.85rem">Die Daten bleiben nur in deinem Browser gespeichert und werden nicht geteilt. Nur was du selbst sendest, verlässt dein Gerät. Sternzeichen und Kartendeutung dienen der Freude und Reflexion, nicht der Vorhersage.</p>
 </section>
 <section id="lgm" hidden>
@@ -659,8 +712,11 @@ a.btn{text-decoration:none}
 <div class="dkh"><h3 id="skt">Sterne &amp; Geburtstage</h3><button class="btn o" id="skx" type="button" aria-label="Fenster schließen">✕</button></div>
 <section class="zsub" id="zsub" aria-label="Sternzeichen und Geburtstage"><div class="zdk" id="zdk"></div></section>
 </div></dialog>
+<dialog id="trd" class="dkd pdd" aria-labelledby="trt"><div class="dkw">
+<div class="dkh"><h3 id="trt">✦ Dein Transformationsraum</h3><button class="btn o" id="trx" type="button" aria-label="Fenster schließen">✕</button></div>
+<div id="trb"></div></div></dialog>
 <dialog id="pdd" class="dkd pdd" aria-labelledby="pdt"><div class="dkw">
-<div class="dkh"><h3 id="pdt">Dein Kartenreich zum Mitnehmen</h3><button class="btn o" id="pdx" type="button" aria-label="Fenster schließen">✕</button></div>
+<div class="dkh"><h3 id="pdt">Dein 21-Tage-Journal</h3><button class="btn o" id="pdx" type="button" aria-label="Fenster schließen">✕</button></div>
 <div class="pdc" aria-hidden="true"><span class="k">✦ KARTENREICH ✦</span><b>Transformation</b><span class="s">✦</span><small>21 TAGE · 78 KARTEN</small></div>
 <p class="pdi">Manche Gedanken brauchen Papier. Dieses Arbeitsbuch ist dein stiller Begleiter durch alle 21 Tage: zum Ausdrucken, zum Ausfüllen am Tablet oder zum Hineinkritzeln mit deinem Lieblingsstift. Kein Prüfungsheft, sondern ein Ort, an dem deine eigenen Worte zählen.</p>
 <div class="pdchips"><span>68 Seiten</span><span>21 Tage</span><span>PDF · 216 KB</span></div>
@@ -688,7 +744,7 @@ a.btn{text-decoration:none}
 <p style="margin-bottom:8px;color:var(--ink);font-weight:600">© 2026 Michaela Schäfer – 21 Tage Transformation. Alle Rechte vorbehalten.</p>
 <p style="max-width:640px;margin:0 auto 18px">Diese Seite dient der persönlichen Reflexion und Motivation. Tarot ist kein Ersatz für ärztliche, psychologische, rechtliche oder finanzielle Beratung. Bei ernsten Belastungen wende dich bitte an Fachleute oder eine offizielle Beratungsstelle.</p>
 <div class="legal" id="legal"></div>
-<p><a href="https://whatsapp.com/channel/0029Vb9Izau4IBh8cdFsoZ0Z" target="_blank" rel="noopener">WhatsApp-Kanal folgen</a> | <a href="#days">Zu den 21 Tagen</a></p>
+<p><a href="https://whatsapp.com/channel/0029Vb9Izau4IBh8cdFsoZ0Z" target="_blank" rel="noopener">WhatsApp-Kanal folgen</a> | <a href="#days">Zu den 21 Tagen</a> | <a href="karten/">Alle 78 Karten und ihre Bedeutung</a></p>
 </footer>
 </div>
 
@@ -1061,19 +1117,42 @@ rs();addEventListener("resize",()=>{rs();if(rm)dr(0)});dr(0);
 const hd=document.querySelector(".hd");hd.id="home";
 $("fam").before($("lgm"));["lex","lgm","fam"].forEach(i=>{$(i).hidden=false;$(i).classList.add("chap")});
 $("lex").querySelector("h2").textContent="Kartenlexikon";
-hd.insertAdjacentHTML("afterbegin",'<div class="ey">✦ Willkommen in deinem Kartenreich ✦</div>');
-hd.querySelector("p").textContent="Ein Programm für 21 Tage, ein Lexikon mit 78 Karten, neun Legemethoden und dein Familienkreis: alles liegt hier auf einer einzigen, ruhigen Seite für dich bereit.";
-hd.insertAdjacentHTML("beforeend",'<div class="cta2"><button class="btn" id="hg">✦ Ziehe deine Tageskarte</button><button class="btn o" id="hz">Zum Programm</button></div><div id="tgc"></div>');
-$("hg").onclick=()=>{const d=new Date(),c=CARDS[Math.abs((d.getFullYear()*400+(d.getMonth()+1)*31+d.getDate())*7919)%78];$("tgc").innerHTML=`<div class="tg" style="--sc:${c.col}">${mc(c,"Deine Tageskarte")}<div class="ct"><h3>${c.name}</h3><p class="kw">${c.kw}</p><p>${c.up}</p><p class="qs">${c.tip}</p></div></div>`;{const f=$("tgc").querySelector(".cf");if(f){f.tabIndex=0;f.setAttribute("role","button");f.setAttribute("aria-label","Karte vergrößern")}}$("tgc").scrollIntoView({behavior:rm?"auto":"smooth",block:"center"})};
+
+hd.querySelector("p").textContent="Ziehe deine erste Karte und entdecke, was sie dir heute zeigen kann – dann beginne deine persönliche 21-Tage-Reise.";
+hd.insertAdjacentHTML("beforeend",'<div class="cta2"><button class="btn" id="hg">✦ Meine erste Karte ziehen</button><button class="btn o" id="hz">Zum Programm</button></div><div id="tgc"></div>');
+
+function shareInit(c){const box=$("tgc");if(box.querySelector(".shb"))return;
+const w=document.createElement("div");w.className="shr shb";w.innerHTML='<button class="btn" data-f="p">✦ Als Bild teilen (Instagram)</button><button class="btn o" data-f="s">Als Story (9:16)</button><button class="btn wa" data-f="w">WhatsApp</button><span class="msg" role="status"></span>';box.appendChild(w);
+const say=t=>{w.querySelector(".msg").textContent=t};
+const wrap=(g,t,x,y,mw,lh)=>{const a=t.split(" ");let l="";for(const q of a){const m=l?l+" "+q:q;if(g.measureText(m).width>mw&&l){g.fillText(l,x,y);y+=lh;l=q}else l=m}g.fillText(l,x,y);return y+lh};
+const make=async H=>{const cv=document.createElement("canvas");cv.width=1080;cv.height=H;const g=cv.getContext("2d");
+const bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,"#1a1024");bg.addColorStop(1,"#0e0817");g.fillStyle=bg;g.fillRect(0,0,1080,H);
+g.textAlign="center";g.fillStyle="#e8b45a";g.font="600 34px Georgia,serif";g.fillText("✦  KARTENREICH  ✦",540,H>1500?150:90);
+const cw=H>1500?560:520,ch=Math.round(cw*1.5),cx=(1080-cw)/2,cy=H>1500?230:130;
+let ok=false;if(typeof IMGS!=="undefined"&&IMGS.has(c.id)){try{const im=await new Promise((r,j)=>{const i=new Image();i.onload=()=>r(i);i.onerror=j;i.src="cards/"+c.id+".jpg"});g.save();g.shadowColor="rgba(232,180,90,.55)";g.shadowBlur=60;g.drawImage(im,cx,cy,cw,ch);g.restore();ok=true}catch(e){}}
+if(!ok){g.strokeStyle="#e8b45a";g.lineWidth=3;g.strokeRect(cx,cy,cw,ch);g.fillStyle="#f7d98a";g.font="500 52px Georgia,serif";g.fillText(c.name,540,cy+ch/2)}
+let y=cy+ch+(H>1500?110:80);g.fillStyle="#f7d98a";g.font="500 62px Georgia,serif";g.fillText(c.name,540,y);
+g.fillStyle="#e8b45a";g.font="italic 32px Georgia,serif";y+=56;g.fillText(c.kw.split(":")[0],540,y);
+g.fillStyle="#ece3f2";g.font="italic 34px Georgia,serif";y=wrap(g,"„"+c.tip+"“",540,y+64,860,48);
+g.fillStyle="#a998b8";g.font="26px Arial,sans-serif";g.fillText("Kartenreich · 21 Tage · 78 Karten · Zieh deine Karte kostenlos",540,H-(H>1500?120:50));
+return new Promise(r=>cv.toBlob(r,"image/png"))};
+const txt="✦ Meine Karte heute: "+c.name+" – „"+c.tip+"“ Zieh deine eigene Karte im Kartenreich: "+location.href.split("#")[0];
+w.onclick=async e=>{const b=e.target.closest("button");if(!b)return;const f=b.dataset.f;
+if(f==="w"){window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank","noopener");return}
+say("Bild wird erstellt …");try{const bl=await make(f==="s"?1920:1350),fn="kartenreich-"+c.id+(f==="s"?"-story":"")+".png",file=new File([bl],fn,{type:"image/png"});
+if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],text:txt});say("");return}catch(er){if(er&&er.name==="AbortError"){say("");return}}}
+const a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download=fn;document.body.appendChild(a);a.click();a.remove();say("Bild gespeichert – du findest es in deinen Downloads.")}catch(er){say("Das Bild konnte leider nicht erstellt werden.")}}}
+function dayIdx(){let id=ls.g("kr_dev",null);if(!id){id=Math.random().toString(36).slice(2)+Date.now().toString(36);ls.s("kr_dev",id)}const d=new Date(),k=id+"|"+d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();let h=2166136261;for(let i=0;i<k.length;i++){h^=k.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return h%78}
+$("hg").onclick=()=>{const c=CARDS[dayIdx()];$("tgc").innerHTML=`<div class="tg" style="--sc:${c.col}">${mc(c,"Deine Tageskarte")}<div class="ct"><h3>${c.name}</h3><p class="kw">${c.kw}</p><p>${c.up}</p><p class="qs">${c.tip}</p></div></div>`;{const f=$("tgc").querySelector(".cf");if(f){f.tabIndex=0;f.setAttribute("role","button");f.setAttribute("aria-label","Karte vergrößern")}}shareInit(c);$("tgc").scrollIntoView({behavior:rm?"auto":"smooth",block:"center"})};
 /* Zoom mit Sternenstaub */
 (function(){const mq=matchMedia("(prefers-reduced-motion: reduce)");let zm;function close(){if(!zm)return;zm.classList.remove("on");const z=zm;zm=null;setTimeout(()=>z.remove(),mq.matches?0:350);document.removeEventListener("keydown",esc)}function esc(e){if(e.key==="Escape")close()}function open(src,alt){if(zm)return;zm=document.createElement("div");zm.className="zm";zm.setAttribute("role","dialog");zm.setAttribute("aria-modal","true");zm.setAttribute("aria-label",alt||"Karte");let d="";if(!mq.matches)for(let i=0;i<120;i++){const a=Math.random()*6.283,r=18+Math.random()*34,sz=3+Math.random()*5;d+=`<i style="left:${50+Math.cos(a)*r*.8}%;top:${50+Math.sin(a)*r}%;width:${sz}px;height:${sz}px;--dx:${(Math.random()-.5)*60}px;--dy:${-30-Math.random()*90}px;animation-delay:${Math.random()*3}s;animation-duration:${3+Math.random()*3}s"></i>`}zm.innerHTML=`<div class="zd" aria-hidden="true">${d}</div><div class="zc"><img src="${src}" alt="${(alt||"").replace(/"/g,"&quot;")}" draggable="false"><span class="zh">Tippe zum Schließen</span></div>`;zm.onclick=close;document.body.appendChild(zm);document.addEventListener("keydown",esc);requestAnimationFrame(()=>zm&&zm.classList.add("on"))}const go=e=>{const f=e.target.closest&&e.target.closest("#tgc .cf");if(!f)return;const im=f.querySelector("img");if(!im)return;e.preventDefault();open(im.currentSrc||im.src,im.alt)};document.addEventListener("click",go);document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("#tgc .cf"))go(e)})})();
 $("hz").onclick=()=>document.querySelector(".prog").scrollIntoView({behavior:rm?"auto":"smooth",block:"start"});
 const lazy=(id,fn)=>{const el=$(id);let d=false;const run=()=>{if(!d){d=true;fn()}};if("IntersectionObserver" in window){const o=new IntersectionObserver(e=>{if(e[0].isIntersecting){o.disconnect();run()}},{rootMargin:"900px 0px"});o.observe(el)}else run()};
 lazy("lex",()=>build());lazy("lgm",()=>lgBuild());renderFam();
 /* Navigation */
-const T=[["home","Programm"],["lex","Kartenlexikon"],["lgm","Legemethoden"],["fam","Familienkreis"]],nav=document.querySelector(".tabs");
-nav.removeAttribute("role");nav.innerHTML=T.map((t,i)=>`<button data-t="${t[0]}" aria-current="${i===0}" aria-selected="${i===0}">${t[1]}</button>`).join("")+'<button id="tdk" data-o="dk" aria-haspopup="dialog" aria-selected="false">✦ Drei Karten</button><button id="tsk" data-o="sk" aria-haspopup="dialog" aria-selected="false">✦ Sterne &amp; Geburtstage</button><button id="tpd" data-o="pd" aria-haspopup="dialog" aria-selected="false">✦ Arbeitsbuch</button><button class="gd" id="gg">✦ Anleitung</button>';
-nav.onclick=e=>{const ob=e.target.closest("button[data-o]");if(ob){({dk:()=>window.openDk(),sk:()=>window.openSk(),pd:()=>window.openPd()})[ob.dataset.o]();return}const b=e.target.closest("button[data-t]");if(!b)return;b.dataset.t==="home"?scrollTo({top:0,behavior:rm?"auto":"smooth"}):$(b.dataset.t).scrollIntoView({behavior:rm?"auto":"smooth",block:"start"})};
+const T=[["home","Programm"],["lex","Kartenlexikon"],["lgm","Legemethoden"],["fam","Kartenkreis"]],nav=document.querySelector(".tabs");
+nav.removeAttribute("role");nav.innerHTML=T.map((t,i)=>`<button data-t="${t[0]}" aria-current="${i===0}" aria-selected="${i===0}">${t[1]}</button>`).join("")+'<button id="tdk" data-o="dk" aria-haspopup="dialog" aria-selected="false">✦ Drei Karten</button><button id="tsk" data-o="sk" aria-haspopup="dialog" aria-selected="false">✦ Sterne &amp; Geburtstage</button><button id="tpd" data-o="pd" aria-haspopup="dialog" aria-selected="false">✦ Arbeitsbuch</button><button id="ttr" data-o="tr" aria-haspopup="dialog" aria-selected="false">✦ Transformation</button><button class="gd" id="gg">✦ Anleitung</button>';
+nav.onclick=e=>{const ob=e.target.closest("button[data-o]");if(ob){({dk:()=>window.openDk(),sk:()=>window.openSk(),pd:()=>window.openPd(),tr:()=>window.openTr()})[ob.dataset.o]();return}const b=e.target.closest("button[data-t]");if(!b)return;b.dataset.t==="home"?scrollTo({top:0,behavior:rm?"auto":"smooth"}):$(b.dataset.t).scrollIntoView({behavior:rm?"auto":"smooth",block:"start"})};
 let ra,la="";addEventListener("scroll",()=>{cancelAnimationFrame(ra);ra=requestAnimationFrame(()=>{let a="home";T.forEach(t=>{if($(t[0]).getBoundingClientRect().top<innerHeight*.4)a=t[0]});if(a!==la){la=a;nav.querySelectorAll("[data-t]").forEach(b=>{const on=b.dataset.t===a;b.setAttribute("aria-selected",on);if(on)nav.scrollTo({left:b.offsetLeft-(nav.clientWidth-b.offsetWidth)/2,behavior:"smooth"})})}})},{passive:true});
 /* Fenster: Sterne & Geburtstage, Arbeitsbuch */
 (function(){
@@ -1499,6 +1578,37 @@ if(!/^https?:/.test(location.href))$("bnote").insertAdjacentHTML("beforeend"," D
 const rf=renderFam;renderFam=function(){rf();render()};
 root.addEventListener("click",e=>{if(e.target.closest("#zrw,#zbk"))setTimeout(sub,0)});setInterval(()=>{if(!document.hidden)sub()},60000);
 render();const iv=setInterval(()=>{if(check())clearInterval(iv)},1200);
+})();
+
+(function(){const OKH=["578fe085f5d4fac23fb9643e6cdac347a87a7d985cd1a1a628ef043949088624", "2f3e2a96baee73098d8ea9eb664f94a1e52212354bef3b035c0f3e4353f32119", "b07118e44833e9d716a6e949fa4e137a13eb420f34a2ba01fb5b7bcaac5d6439", "c1db318f7b7ca83bbd3f43649e42e4071ddb42bb42d977e4243027eeaed71195", "e44e0b45f889728a2f83bc1a11e449e3c3590810aa7d521773e044f1163927a7", "9446c144d44162126da59504c85f4dfb5aefb744b2cf7dd65a0a7da832e10c78", "5348fc43419bc51aa390c1eb0e6180cf79bb495a387106367cef37db5cc154aa", "c336c74152c50f036a730af472c7f0d760387e07d046691bc5450a7646271fbd", "0fe9af3d9012d2d480ac0396f8fb5ac4142f0a95319ad56a4380346e363375e5", "77bdb36a94e76953cdbf6ac472fa30c48ae61422fb8fbf10905c563188cf1a8e"],dl=$("trd");
+const sha=async t=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)))].map(b=>b.toString(16).padStart(2,"0")).join("");
+const esc=t=>String(t).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const bar=()=>{const m=ls.g("kr_login",null),sp=document.querySelector(".bar span");if(sp)sp.innerHTML=m?"<b>●</b> Willkommen, "+esc(m.n):"<b>●</b> Dein Kartenraum ist offen"};
+function draw(){const m=ls.g("kr_login",null),b=$("trb");bar();
+if(!m){b.innerHTML='<p class="pdi">Dein persönlicher Raum für die 21 Tage: Programm, Journal und deine Tageskarte an einem Ort. Du erhältst deinen Zugangscode nach dem Kauf der Transformation.</p><div class="inp" style="max-width:480px;margin:0 auto"><div><label for="trn">Dein Vorname</label><input id="trn" autocomplete="given-name" maxlength="30"></div><div><label for="trc">Dein Zugangscode</label><input id="trc" autocomplete="off" placeholder="KR-XXXX-XXXX" maxlength="20"></div></div><div style="text-align:center"><button class="btn" id="tre">✦ Eintreten</button><div class="msg" id="trm" role="status"></div></div>';
+$("tre").onclick=async()=>{const n=$("trn").value.trim(),c=$("trc").value.toUpperCase().replace(/[^A-Z0-9]/g,"");if(!n||!c){$("trm").textContent="Bitte Vorname und Zugangscode eintragen.";return}
+if(!(window.crypto&&crypto.subtle)){$("trm").textContent="Der Login braucht eine sichere Verbindung (https).";return}
+if(OKH.includes(await sha(c))){ls.s("kr_login",{n:n,t:Date.now()});draw()}else $("trm").textContent="Dieser Code passt leider nicht. Bitte prüfe ihn noch einmal."}}
+else{b.innerHTML='<div class="pdc" aria-hidden="true" style="width:min(200px,60%)"><span class="k">✦ KARTENREICH ✦</span><b>'+esc(m.n)+'</b><span class="s">✦</span><small>DEIN TRANSFORMATIONSRAUM</small></div><p class="pdi" style="text-align:center">Schön, dass du da bist, '+esc(m.n)+'. Nimm dir heute deine Zeit: Karte ziehen, hinschauen, aufschreiben.</p><div class="pdchips" style="justify-content:center"><button class="btn" id="tr1">✦ Meine Tageskarte</button><button class="btn o" id="tr2">Zum 21-Tage-Programm</button><button class="btn o" id="tr3">21-Tage-Journal</button><button class="btn o" id="tr4">Abmelden</button></div>';
+$("tr1").onclick=()=>{dl.close();$("hg").click()};$("tr2").onclick=()=>{dl.close();$("days").scrollIntoView({behavior:"smooth",block:"start"})};$("tr3").onclick=()=>{dl.close();window.openPd()};$("tr4").onclick=()=>{ls.s("kr_login",null);draw()}}}
+window.openTr=()=>{draw();dl.showModal()};$("trx").onclick=()=>dl.close();bar()})();
+
+(function(){const nav=document.querySelector("nav.tabs");if(!nav)return;
+const L={home:["21-Tage-Programm","Programm"],lex:["Kartenlexikon","Lexikon"],lgm:["Legemethoden","Legungen"],fam:["Kartenkreis","Kreis"]};
+nav.querySelectorAll("button[data-t]").forEach(b=>{const l=L[b.dataset.t];if(l)b.innerHTML='<span class="f">'+l[0]+'</span><span class="s">'+l[1]+'</span>'});
+const mw=document.createElement("div");mw.className="mw";mw.innerHTML='<button id="tmo" type="button" aria-haspopup="true" aria-expanded="false"><span class="f">✦ Mehr ▾</span><span class="s">✦ Mehr</span></button><div class="mp" id="mp" hidden></div>';
+nav.appendChild(mw);const mp=mw.querySelector("#mp"),tm=mw.querySelector("#tmo");
+const g=id=>document.getElementById(id),ttr=g("ttr");
+["tdk","tsk","tpd","gg"].forEach(id=>{const b=g(id);if(b)mp.appendChild(b)});
+const mq=matchMedia("(max-width:900px)");
+const place=()=>{if(mq.matches){mp.insertBefore(ttr,mp.firstChild);document.body.appendChild(mp)}else{nav.insertBefore(ttr,mw);mw.appendChild(mp)}};place();
+(mq.addEventListener?mq.addEventListener("change",place):mq.addListener(place));
+const close=()=>{mp.hidden=true;tm.setAttribute("aria-expanded","false")};
+tm.onclick=e=>{e.stopPropagation();const o=mp.hidden;mp.hidden=!o;tm.setAttribute("aria-expanded",String(o))};
+mp.addEventListener("click",e=>{const ob=e.target.closest("button[data-o]");if(ob&&!nav.contains(ob)){const f={dk:window.openDk,sk:window.openSk,pd:window.openPd,tr:window.openTr}[ob.dataset.o];if(f)f()}setTimeout(close,0)});
+document.addEventListener("click",e=>{if(!mw.contains(e.target)&&!mp.contains(e.target))close()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+const nh=()=>document.documentElement.style.setProperty("--nh",nav.offsetHeight+"px");nh();addEventListener("resize",nh);
 })();
 </script>
 
