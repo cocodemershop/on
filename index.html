@@ -647,6 +647,21 @@ html{scroll-behavior:auto;-webkit-tap-highlight-color:transparent}
 #dkd article.dkx:nth-of-type(2){animation-delay:.15s}#dkd article.dkx:nth-of-type(3){animation-delay:.3s}
 @media (min-width:701px){#dkd .dkh{margin-top:-14px}#dkd .dkslots{max-width:480px}}
 @media (max-width:700px){#dkd{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0;border:0}#dkd .dkw{padding:0 14px calc(28px + env(safe-area-inset-bottom))}#dkd .dkh{margin:0 -14px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px}#dkd .dkslots{gap:10px;max-width:none}.dksub{font-size:.85rem;letter-spacing:.12em}}
+.buyrow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}.buyrow .btn{margin-top:10px;text-decoration:none}
+a.btn{text-decoration:none}a.btn.o{background:transparent;color:var(--g)}
+.kbuy{max-width:480px;margin:18px auto 6px;padding:16px 18px;border:1px solid color-mix(in srgb,var(--g) 55%,transparent);border-radius:14px;background:rgba(232,180,90,.08);text-align:center}
+.kbuy b{display:block;color:var(--g);font:500 1.15rem "Bodoni Moda",Georgia,serif}.kbuy small{display:block;color:var(--mute);margin:4px 0 2px}.kbuy .btn{margin-top:10px}
+.kst{max-width:480px;margin:18px auto 4px;text-align:center;color:var(--g);font:500 1.15rem "Bodoni Moda",Georgia,serif}
+.wkh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:26px 2px 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.wkh b{color:var(--g);font:500 1.35rem "Bodoni Moda",Georgia,serif}.wkh span{color:var(--ink);letter-spacing:.06em}.wkh small{margin-left:auto;color:var(--mute)}.wkh.on small{color:var(--ok)}
+.sndhint{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:119;display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:10px 16px 10px 14px;border:1px solid var(--g);border-radius:16px 16px 4px 16px;background:rgba(20,12,32,.92);color:var(--g);font:500 1rem "Bodoni Moda",Georgia,serif;cursor:pointer;box-shadow:0 8px 28px rgba(0,0,0,.45),0 0 22px rgba(232,180,90,.25);opacity:0;transform:translateY(10px);transition:opacity .6s,transform .6s}
+.sndhint[hidden]{display:none}.sndhint.on{opacity:1;transform:none}.sndhint span{display:inline-block;margin-right:6px}.sndhint small{display:block;color:var(--mute);font:400 .78rem "Instrument Sans",sans-serif}
+@media (max-width:900px){.sndhint{bottom:calc(148px + env(safe-area-inset-bottom,0px))}}
+@media (prefers-reduced-motion:reduce){.sndhint{transition:none}}
+#dkd{background:linear-gradient(155deg,rgba(255,255,255,.14),rgba(255,255,255,.04) 40%,rgba(18,12,32,.28)),radial-gradient(ellipse at 50% -10%,rgba(185,138,224,.34),transparent 55%),radial-gradient(ellipse at 50% 110%,rgba(232,180,90,.2),transparent 60%),rgba(44,31,68,.92);border:1px solid rgba(247,217,138,.45);border-radius:26px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 0 0 1px rgba(255,255,255,.04),0 30px 70px -20px rgba(0,0,0,.6),0 0 60px -22px rgba(232,180,90,.45)}
+#dkd .dkh{background:linear-gradient(rgba(48,34,74,.96),rgba(48,34,74,.78));border-bottom-color:rgba(247,217,138,.3)}
+#dkd .dkx{background:linear-gradient(120deg,color-mix(in srgb,var(--sc,var(--g)) 12%,transparent),transparent 65%),rgba(255,255,255,.07)}
+@media (max-width:700px){#dkd{border-radius:0;border:0}}
 </style>
 </head>
 <body>
@@ -659,6 +674,7 @@ html{scroll-behavior:auto;-webkit-tap-highlight-color:transparent}
   <p>Ziehe deine erste Karte und entdecke, was sie dir heute zeigen kann – dann beginne deine persönliche 21-Tage-Reise.</p>
   <p style="margin-top:10px;color:var(--ink)"><b>Heute musst du nichts können. Du musst nur anfangen.</b></p>
   <p style="font-size:.85rem;margin-top:12px">Kostenlos starten · keine Anmeldung · dein Kartenraum bleibt bei dir</p>
+  <p style="font-size:.9rem;margin-top:6px"><a href="https://lebensbegleiterin.company.site/products/bucher" target="_blank" rel="noopener noreferrer" style="color:var(--g)">Die komplette 21-Tage-Transformation kaufen →</a></p>
 </header>
 <div class="card" id="bekomme"><h2>Dein Kartenreich auf einen Blick</h2>
 <p class="p">Lerne in 21 Tagen, Tarotkarten selbst zu ziehen, zu verstehen und für deine eigenen Fragen zu deuten. Das bekommst du:</p>
@@ -709,7 +725,7 @@ html{scroll-behavior:auto;-webkit-tap-highlight-color:transparent}
 <li><h4>Wähle dein Deck</h4><p class="p">Nimm ein Deck, dessen Bilder dich ansprechen. Ein Rider-Waite-Deck eignet sich besonders gut zum Lernen.</p></li>
 <li><h4>Schaffe deinen Platz</h4><p class="p">Ein Tisch, ein Tuch, eine Kerze, ein Notizbuch. Immer derselbe Ort, immer dieselbe Zeit.</p></li>
 <li><h4>Suche Verbündete</h4><p class="p">Erzähle mindestens einer Person von deinem Plan. Oder folge unten dem <a href="https://whatsapp.com/channel/0029Vb9Izau4IBh8cdFsoZ0Z" target="_blank" rel="noopener" style="color:var(--g)">WhatsApp-Kanal</a>.</p></li>
-<li><h4>Aktiviere den Schalter</h4><p class="p">Klicke unten auf „Schalter umlegen“. Ab dann öffnet sich täglich eine neue Mission.</p></li></ol></div>
+<li><h4>Aktiviere den Schalter</h4><p class="p">Klicke unten auf „Schalter umlegen“. Ab dann öffnet sich Woche für Woche ein neuer Abschnitt mit sieben Tagen.</p></li></ol></div>
 
 <div class="card"><h2>Dein persönliches Profil</h2>
 <p class="p">Deine Angaben bleiben lokal in deinem Browser. Sie dienen nur deiner Auswertung.</p>
@@ -724,8 +740,8 @@ html{scroll-behavior:auto;-webkit-tap-highlight-color:transparent}
 <div class="card" id="orc"><h2>Dein Orakel</h2><p class="p">Speichere dein Profil, dann spricht das Orakel zu dir: drei Karten, die aus deinem Namen, deinem Starttag und dem heutigen Tag entstehen. Du kannst sie an deine Liebsten senden.</p><button class="btn" id="ob">✦ Mein Orakel befragen</button><div class="msg" id="om"></div><div id="oo"></div></div>
 
 <div class="card cta kr-out" id="krteaser"><h3>✦ Dein Transformationsraum</h3>
-<p class="p">Kartenlexikon mit allen 78 Karten, dein 21-Tage-Programm mit täglicher Freischaltung und dein Journal findest du in deinem persönlichen Raum. Du betrittst ihn mit deinem Zugangscode.</p>
-<button class="btn" id="krtb" type="button">✦ Transformation öffnen</button></div>
+<p class="p">Kartenlexikon mit allen 78 Karten, dein 21-Tage-Programm mit wöchentlicher Freischaltung und dein Journal findest du in deinem persönlichen Raum. Du betrittst ihn mit deinem Zugangscode.</p>
+<div class="buyrow"><a class="btn" href="https://lebensbegleiterin.company.site/products/bucher" target="_blank" rel="noopener noreferrer">✦ Jetzt kaufen</a><button class="btn o" id="krtb" type="button">Ich habe einen Code · Eintreten</button></div></div>
 <div class="card dl kr-lock"><h2>Dein 21-Tage-Journal zum Download</h2><p class="p">Alle 21 Tage auf Papier: zum Ausdrucken oder Ausfüllen am Tablet.</p><button class="btn" id="pdo" type="button">✦ Arbeitsbuch öffnen</button></div>
 <div class="card cta"><h3>Bereit für Tag 1?</h3>
 <p class="p">Mit einem Klick startet dein Programm. Tag 1 wird jetzt für dich geöffnet.</p>
@@ -802,13 +818,13 @@ html{scroll-behavior:auto;-webkit-tap-highlight-color:transparent}
 <h3>Welche Legung eignet sich für Anfänger?</h3><p>Die Drei-Karten-Legung mit „Was war? Was ist? Was möchte gesehen werden?“. Sie ist überschaubar und führt schnell zu eigenen Deutungen. Die Legemethoden in Kartenreich bauen darauf auf.</p>
 <h3>Kann man Tarot selbst lernen?</h3><p>Ja, mit kleinen täglichen Schritten. Genau dafür ist der 21-Tage-Weg gemacht: von der ersten Karte bis zur eigenen Legung.</p></section>
 <section class="card faq" id="faq"><h2>Häufige Fragen</h2><details><summary>Kann man Tarot selbst lernen?</summary><p>Ja. Kartenreich führt dich in 21 Tagen von der ersten Karte bis zur eigenen Legung: mit täglicher Erklärung, Übung, drei Reflexionsfragen und Platz für dein Tagebuch.</p></details><details><summary>Sagt Tarot die Zukunft voraus?</summary><p>Nein. Hier ist Tarot ein Spiegel: Die Karten zeigen Gedankenmuster und geben dir bessere Fragen. Entscheidungen triffst du selbst.</p></details><details><summary>Brauche ich ein eigenes Kartendeck?</summary><p>Zum Einstieg nicht. Du kannst Karten direkt in Kartenreich ziehen. Für die tägliche Übung am Tisch eignet sich ein Rider-Waite-Deck besonders gut.</p></details><details><summary>Was kostet Kartenreich?</summary><p>Die erste Karte und die Drei-Karten-Legung sind kostenlos, ohne Anmeldung. Den vollständigen Transformationsraum mit 21-Tage-Programm, 78-Karten-Lexikon und Journal öffnest du mit deinem Zugangscode.</p></details><details><summary>Was passiert mit meinen Daten?</summary><p>Deine Angaben bleiben lokal auf deinem Gerät. Es gibt kein Konto, und nichts wird ohne dein Zutun weitergegeben.</p></details></section>
-<div class="card cta"><h3>Bereit für Tag 1?</h3><p class="p">Deine Reise beginnt mit einer Karte.</p><button class="btn" type="button" onclick="openDk()">✦ Meine erste Karte ziehen</button></div>
+<div class="card cta"><h3>Bereit für Tag 1?</h3><p class="p">Deine Reise beginnt mit einer Karte.</p><div class="buyrow"><button class="btn" type="button" onclick="openDk()">✦ Meine erste Karte ziehen</button><a class="btn o" href="https://lebensbegleiterin.company.site/products/bucher" target="_blank" rel="noopener noreferrer">✦ Transformation kaufen</a></div></div>
 <footer class="foot">
 <div class="q">„Du gibst nichts auf. Du gewinnst deinen Blick zurück.“</div>
 <p style="margin-bottom:8px;color:var(--ink);font-weight:600">© 2026 Michaela Schäfer – 21 Tage Transformation. Alle Rechte vorbehalten.</p>
 <p style="max-width:640px;margin:0 auto 18px">Diese Seite dient der persönlichen Reflexion und Motivation. Tarot ist kein Ersatz für ärztliche, psychologische, rechtliche oder finanzielle Beratung. Bei ernsten Belastungen wende dich bitte an Fachleute oder eine offizielle Beratungsstelle.</p>
 <div class="legal" id="legal"></div>
-<p><a href="https://whatsapp.com/channel/0029Vb9Izau4IBh8cdFsoZ0Z" target="_blank" rel="noopener">WhatsApp-Kanal folgen</a> | <a href="#days">Zu den 21 Tagen</a> | <a href="karten/">Alle 78 Karten und ihre Bedeutung</a></p>
+<p><a href="https://whatsapp.com/channel/0029Vb9Izau4IBh8cdFsoZ0Z" target="_blank" rel="noopener">WhatsApp-Kanal folgen</a> | <a href="https://lebensbegleiterin.company.site/products/bucher" target="_blank" rel="noopener noreferrer">Transformation kaufen</a> | <a href="#days">Zu den 21 Tagen</a> | <a href="karten/">Alle 78 Karten und ihre Bedeutung</a></p>
 </footer>
 </div>
 
@@ -842,7 +858,9 @@ const ls={g:(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.p
 let done=ls.g(SK,[]),prof=ls.g(SP,null),start=ls.g(ST,null),armed=false;
 const $=id=>document.getElementById(id),DAY=864e5;
 function elapsed(){return start?Math.min(21,Math.max(0,Math.floor((Date.now()-start)/DAY))+1):0}
-function unlocked(){return Math.max(1,elapsed())}
+function unlocked(){const e=elapsed();return e<1?1:Math.min(21,Math.ceil(e/7)*7)}
+const WN=["Hinschauen","Fragen &amp; Verbinden","Eigene Wege"],wkd=w=>start?new Date(start+(w-1)*7*DAY).toLocaleDateString("de-DE",{day:"numeric",month:"long"}):"";
+const wkh=(w,u)=>{const o=(w-1)*7+1<=u;return`<div class="wkh${o?" on":""}"><b>Woche ${w}</b><span>${WN[w-1]}</span><small>${o?"✦ geöffnet":"🔒 öffnet am "+(wkd(w)||"nach dem Start")}</small></div>`}
 function fmt(n){return n.toLocaleString("de-DE")}
 function metrics(){const e=elapsed(),c=prof?prof.cards:0,m=prof?prof.min:0;$("m1").textContent=fmt(e*c);$("m2").textContent=fmt(e*m);$("m3").textContent=done.length}
 function saveProfile(){const n=$("un").value.trim(),d=$("ud").value,c=parseInt($("uc").value),m=parseInt($("um").value);
@@ -859,7 +877,7 @@ function render(){const u=unlocked();
  $("days").innerHTML=D.map((x,i)=>{const n=i+1,lock=n>u,ok=done.includes(n);
  const fq="<ol>"+x[8].map(q=>`<li>${q}</li>`).join("")+"</ol>";
  const tb=x[10].map((l,k)=>`<label class="tbf"><span>${l}</span><input type="text" maxlength="300" data-tb="t${n}_${k}" value="${ea(TBV["t"+n+"_"+k]||"")}" autocomplete="off"></label>`).join("");
- return`<div class="card${lock?" locked":""}${ok?" completed":""}" id="c${n}"><div class="dh" data-n="${n}" tabindex="0" role="button" aria-expanded="false"><div class="l"><span class="dn">TAG ${n}</span><span class="dt">${x[0]}</span></div><span class="ph">${lock?"🔒 Gesperrt bis zum Folgetag":phase(n)}</span></div>
+ return(n%7===1?wkh(Math.ceil(n/7),u):"")+`<div class="card${lock?" locked":""}${ok?" completed":""}" id="c${n}"><div class="dh" data-n="${n}" tabindex="0" role="button" aria-expanded="false"><div class="l"><span class="dn">TAG ${n}</span><span class="dt">${x[0]}</span></div><span class="ph">${lock?"🔒 Woche "+Math.ceil(n/7)+" öffnet am "+(wkd(Math.ceil(n/7))||"nach dem Start"):phase(n)}</span></div>
  <div class="dc"><p class="wq2">${x[1]}</p><p class="lead">${x[2]}</p>
  ${sec("hl","Das lernst du heute",`<p>${x[3]}</p>`)}
  ${sec("nf","Ein Kartenbeispiel",`<p>${x[4]}</p>`)}
@@ -943,7 +961,7 @@ formular:["Vertrag widerrufen",`<p>Mit diesem Formular bereitest du deinen Wider
 <button class="btn" id="wsend" style="margin-top:6px">Widerruf vorbereiten</button><textarea id="wout" readonly rows="9" style="display:none;width:100%;margin-top:10px" aria-label="Widerrufstext zum Kopieren"></textarea>
 <h3>Muster-Widerrufsformular</h3><p>An Michaela Schäfer, Kaiser-Friedrich-Str. 82, 41460 Neuss: Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung bzw. die Bereitstellung der folgenden digitalen Inhalte: [Produkt]. Bestellt am: [Datum]. Name und Anschrift des Verbrauchers: [Angaben]. Datum: [Datum]. Unterschrift nur bei Mitteilung auf Papier.</p>`],
 liefer:["Lieferbedingungen",HINT+`<h3>Digitale Bereitstellung</h3><p>Das Programm ist ein digitales Produkt. Es wird nichts per Post versendet, es fallen keine Versandkosten an.</p>
-<h3>Zeitpunkt und Art</h3><p>Nach ${F("Zahlungseingang / Bestellbestätigung")} erhältst du ${F("den Zugangslink per E-Mail / sofortigen Zugriff auf der Seite")}. Die Tage schalten sich ab deinem Startdatum täglich frei.</p>
+<h3>Zeitpunkt und Art</h3><p>Nach ${F("Zahlungseingang / Bestellbestätigung")} erhältst du ${F("den Zugangslink per E-Mail / sofortigen Zugriff auf der Seite")}. Das Programm schaltet sich ab deinem Startdatum wochenweise frei: Woche 1 (Tag 1–7) sofort, Woche 2 (Tag 8–14) nach sieben Tagen, Woche 3 (Tag 15–21) nach vierzehn Tagen.</p>
 <h3>Zugang und Dauer</h3><p>Du erhältst Zugang für ${F("Dauer, z. B. unbefristet / 12 Monate")}.</p>
 <h3>Was du brauchst</h3><p>Siehe „Technische Anforderungen“. Ein Tarotdeck und ein Notizbuch sind nicht enthalten.</p>
 <h3>Störungen</h3><p>Wenn du keinen Zugang erhältst, prüfe deinen Spam-Ordner und melde dich bitte über die im Impressum genannte Kontaktmöglichkeit.</p>`],
@@ -1274,8 +1292,8 @@ const SP=[spr("#ffe9a8","rgba(232,180,90,0)"),spr("#e6c8ff","rgba(185,138,224,0)
 const rr=(a,b)=>a+Math.random()*(b-a);
 function tick(){fg.setTransform(FD,0,0,FD,0,0);fg.clearRect(0,0,FW,FH);fg.globalCompositeOperation="lighter";
 for(let i=P.length-1;i>=0;i--){const p=P[i];if(++p.l>p.m){P.splice(i,1);continue}const t=p.l/p.m;
-if(p.sw){p.a+=p.w;p.r+=p.vr;p.x=p.cx+Math.cos(p.a)*p.r;p.y=p.cy+Math.sin(p.a)*p.r*.8}else{p.x+=p.vx;p.y+=p.vy;p.vy+=.03;p.vx*=.985}
-fg.globalAlpha=Math.max(0,t<.15?t/.15:1-(t-.15)/.85);const z=p.s*(p.sw?1:1-t*.5);fg.drawImage(SP[p.k],p.x-z/2,p.y-z/2,z,z)}
+if(p.sw){p.a+=p.w;p.r+=p.vr;p.x=p.cx+Math.cos(p.a)*p.r;p.y=p.cy+Math.sin(p.a)*p.r*.8}else{p.x+=p.vx;p.y+=p.vy;p.vy+=p.g==null?.03:p.g;p.vx*=.985}
+fg.globalAlpha=Math.max(0,t<.15?t/.15:1-(t-.15)/.85)*(p.al||1);const z=p.s*(p.sw?1:1-t*.5);fg.drawImage(SP[p.k],p.x-z/2,p.y-z/2,z,z)}
 fg.globalCompositeOperation="source-over";if(P.length)raf=requestAnimationFrame(tick);else{raf=0;fxc.style.display="none"}}
 function add(p){if(rmq.matches||P.length>190)return;P.push(p);if(!raf){FD=Math.min(devicePixelRatio||1,1.5);FW=innerWidth;FH=innerHeight;fxc.width=FW*FD;fxc.height=FH*FD;fxc.style.display="block";raf=requestAnimationFrame(tick)}}
 const dust=(x,y)=>add({x:x+rr(-8,8),y:y+rr(-8,8),vx:rr(-.7,.7),vy:rr(-.9,.2),l:0,m:rr(30,55),s:rr(8,22),k:Math.floor(rr(0,5))});
@@ -1285,6 +1303,10 @@ function swirl(x,y,n){for(let i=0;i<n;i++)add({sw:1,cx:x,cy:y,a:rr(0,6.283),r:rr
 const fxSwirl=r=>swirl(r.left+r.width/2,r.top+r.height/2,64);
 const fxFinale=()=>sl.querySelectorAll(".dkc").forEach((c,i)=>setTimeout(()=>fxSwirl(c.getBoundingClientRect()),i*180));
 dlg.addEventListener("close",()=>{P.length=0});
+/* sanfter Feenstaub, der im ganzen Fenster schwebt */
+let ai=0;const ambOn=()=>{if(ai||rmq.matches)return;ai=setInterval(()=>{if(document.hidden||!dlg.open)return;let c=0;for(const p of P)if(p.amb)c++;if(c>=34)return;
+const r=dlg.getBoundingClientRect(),l=Math.max(r.left,0),t=Math.max(r.top,0);add({x:l+Math.random()*Math.min(r.width,innerWidth-l),y:t+Math.random()*Math.min(r.height,innerHeight-t),vx:rr(-.15,.15),vy:rr(-.35,-.08),g:-.0005,l:0,m:rr(110,200),s:rr(7,16),k:Math.floor(rr(0,5)),amb:1,al:.75})},140)};
+new MutationObserver(()=>{if(dlg.open)ambOn();else{clearInterval(ai);ai=0}}).observe(dlg,{attributes:true,attributeFilter:["open"]});
 function shuffle(){deck=CARDS.map(c=>({c,rev:false}));for(let i=deck.length-1;i>0;i--){const j=rnd(i+1);[deck[i],deck[j]]=[deck[j],deck[i]]}const r=$("dkrv").checked;deck.forEach(d=>d.rev=r&&rnd(2)===1)}
 const face=d=>`<div class="cf${cimg(d.c)?" im":""}" style="--sc:${d.c.col};animation:none;${d.rev?"transform:rotate(180deg);":""}">${cimg(d.c)||`<small>${d.c.num}</small><div class="ar">${art(d.c)}</div><div><b>${d.c.name}</b></div>`}</div>`;
 function drawSlots(){sl.innerHTML=SL.map((x,i)=>`<div class="dks"><div class="dkc" id="dkc${i}"><div class="dke">${i+1}</div></div><b>${x[0]}</b><small>${x[1]}</small></div>`).join("")}
@@ -1490,9 +1512,13 @@ const PT=[[.5,.6,1],[1,1,.9],[1.2,.55,.7],[1.56,.35,.5],[2,.4,.45],[2.51,.25,.35
 function bell(t,f,v,du){PT.forEach(p=>{const o=ac.createOscillator(),g=ac.createGain(),e=t+du*p[2];o.type="sine";o.frequency.value=f*p[0];
  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v*p[1],t+.005);g.gain.exponentialRampToValueAtTime(.0001,e);
  o.connect(g);g.connect(mb);o.start(t);o.stop(e+.1)})}
-function strike(m,h){if(!on||!ensure()||ac.state!=="running")return;const t=ac.currentTime+.05;
- if(m===0){const n=h%12||12;for(let i=0;i<n;i++)bell(t+i*2.2,174.6,.5,5.5)}
- else{[523.3,392,659.3].slice(0,m/15===1?1:m/15===2?2:3).forEach((f,i)=>bell(t+i*1.1,f,.32,3.6))}}
+function clap(t,v){const n=ac.sampleRate*.06|0,b=ac.createBuffer(1,n,ac.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,3);const s=ac.createBufferSource(),f=ac.createBiquadFilter(),g=ac.createGain();s.buffer=b;f.type="bandpass";f.frequency.value=2400;g.gain.value=v;s.connect(f);f.connect(g);g.connect(mb);s.start(t)}
+function big(t,f,v,du){clap(t,v*.5);bell(t,f,v,du);PT.slice(0,4).forEach(p=>{const o=ac.createOscillator(),g=ac.createGain(),e=t+du*p[2];o.type="sine";o.frequency.value=f*p[0];o.detune.value=7;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v*p[1]*.45,t+.01);g.gain.exponentialRampToValueAtTime(.0001,e);o.connect(g);g.connect(mb);o.start(t);o.stop(e+.1)})}
+/* Prager Orloj: erst das Totenglöckchen (hell, rasch), dann schlägt die große Turmglocke die Stunde */
+function strike(m,h,f){if(!on&&!f)return;if(!ensure())return;const go=()=>{const t=ac.currentTime+.05;
+ if(m===0){const n=h%12||12;for(let i=0;i<7;i++){clap(t+i*.46,.05);bell(t+i*.46,1318.5,.16,1.5)}const b=t+4.2;for(let i=0;i<n;i++)big(b+i*3,146.8,.55,8)}
+ else{[523.3,392,659.3].slice(0,m/15===1?1:m/15===2?2:3).forEach((q,i)=>bell(t+i*1.1,q,.32,3.6))}};
+ if(ac.state==="running")go();else if(f)ac.resume().then(go).catch(()=>{})}
 function nextQ(){const d=new Date(),m=(Math.floor(d.getMinutes()/15)+1)*15,n=new Date(d.getFullYear(),d.getMonth(),d.getDate(),d.getHours(),m,0);return pad(n.getHours())+":"+pad(n.getMinutes())}
 function ui(){tg.textContent=on?"🔔 Läuten: an":"🔕 Läuten: aus";tg.setAttribute("aria-pressed",on);
  stt.textContent=!on?"Alle 15 Minuten läutet die Uhr, zur vollen Stunde mit Stundenschlag und Apostelumgang. Zum Einschalten tippen.":ac&&ac.state==="running"?"Nächstes Läuten um "+nextQ()+" Uhr":"Läuten ist bereit. Tippe einmal irgendwo auf die Seite, damit der Browser den Ton freigibt."}
@@ -1506,7 +1532,7 @@ setInterval(()=>{const d=new Date(),k=kq(d);
  if(k!==lastK&&d.getSeconds()<45){lastK=k;const m=d.getMinutes();if(m%15===0){if(m===0){if(!document.hidden)play();strike(0,d.getHours())}else strike(m,d.getHours())}ui()}
  else if(k!==lastK)lastK=k;
  if(vis&&!document.hidden&&d.getSeconds()%15===0)upd()},1000);
-ob.onclick=()=>{play();strike(0,new Date().getHours())};
+ob.onclick=()=>{play();strike(0,new Date().getHours(),true)};
 ui();
 upd();
 if("IntersectionObserver" in window)new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis)upd()},{threshold:.1}).observe(sv);
@@ -1671,7 +1697,7 @@ const sha=async t=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new T
 const esc=t=>String(t).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const bar=()=>{const m=ls.g("kr_login",null);document.documentElement.classList.toggle("kr-in",!!m);const sp=document.querySelector(".bar span");if(sp)sp.innerHTML=m?"<b>●</b> Willkommen, "+esc(m.n):"<b>●</b> Dein Kartenraum ist offen"};
 function draw(){const m=ls.g("kr_login",null),b=$("trb");bar();
-if(!m){b.innerHTML='<p class="pdi">Dein persönlicher Raum für die 21 Tage: Programm, Journal und deine Tageskarte an einem Ort. Du erhältst deinen Zugangscode nach dem Kauf der Transformation.</p><div class="inp" style="max-width:480px;margin:0 auto"><div><label for="trn">Dein Vorname</label><input id="trn" autocomplete="given-name" maxlength="30"></div><div><label for="trc">Dein Zugangscode</label><input id="trc" autocomplete="off" placeholder="KR-XXXX-XXXX" maxlength="20"></div></div><div style="text-align:center"><button class="btn" id="tre">✦ Eintreten</button><div class="msg" id="trm" role="status"></div></div>';
+if(!m){b.innerHTML='<p class="pdi">Dein persönlicher Raum für die 21 Tage: Programm, Journal und deine Tageskarte an einem Ort. Dein Weg in zwei Schritten: erst die Transformation kaufen, dann mit deinem Zugangscode eintreten.</p><div class="kbuy"><b>1 · Transformation kaufen</b><small>Du erhältst deinen persönlichen Zugangscode nach dem Kauf.</small><a class="btn" href="https://lebensbegleiterin.company.site/products/bucher" target="_blank" rel="noopener noreferrer">✦ Jetzt kaufen</a></div><p class="kst">2 · Mit deinem Zugangscode eintreten</p><div class="inp" style="max-width:480px;margin:0 auto"><div><label for="trn">Dein Vorname</label><input id="trn" autocomplete="given-name" maxlength="30"></div><div><label for="trc">Dein Zugangscode</label><input id="trc" autocomplete="off" placeholder="KR-XXXX-XXXX" maxlength="20"></div></div><div style="text-align:center"><button class="btn" id="tre">✦ Eintreten</button><div class="msg" id="trm" role="status"></div></div>';
 $("tre").onclick=async()=>{const n=$("trn").value.trim(),c=$("trc").value.toUpperCase().replace(/[^A-Z0-9]/g,"");if(!n||!c){$("trm").textContent="Bitte Vorname und Zugangscode eintragen.";return}
 if(!(window.crypto&&crypto.subtle)){$("trm").textContent="Der Login braucht eine sichere Verbindung (https).";return}
 if(OKH.includes(await sha(c))){ls.s("kr_login",{n:n,t:Date.now()});draw()}else $("trm").textContent="Dieser Code passt leider nicht. Bitte prüfe ihn noch einmal."}}
@@ -1728,6 +1754,16 @@ const hz=document.getElementById("hz");if(hz)hz.addEventListener("click",e=>{if(
 const nav=document.querySelector("nav.tabs");if(nav)nav.addEventListener("click",e=>{const b=e.target.closest('button[data-t="lex"]');if(b&&!inn()){e.stopImmediatePropagation();e.preventDefault();ask()}},true);
 const tb=document.getElementById("krtb");if(tb)tb.onclick=ask;
 const pb=document.getElementById("pdo");if(pb)pb.addEventListener("click",e=>{if(!inn()){e.stopImmediatePropagation();e.preventDefault();ask()}},true);
+})();
+
+(function(){const sb=$("sb"),pn=$("sndp");if(!sb||!pn)return;const K="kr_snd_hint",H=ls.g(K,{n:0,t:0,x:0}),T0=Date.now(),WAIT=[0,18e4,6e5];if(H.x)return;
+const b=document.createElement("button");b.type="button";b.className="sndhint";b.hidden=true;b.setAttribute("aria-label","Klangraum öffnen");b.innerHTML="<span aria-hidden=\"true\">♪</span> Dein Klangraum <small>Musik &amp; Lautstärke wählen</small>";document.body.appendChild(b);
+let tm=0;const hide=()=>{clearTimeout(tm);b.classList.remove("on");setTimeout(()=>{b.hidden=true},600)};
+b.onclick=()=>{H.x=1;ls.s(K,H);hide();if(pn.hidden)sb.click()};
+sb.addEventListener("click",()=>{H.x=1;ls.s(K,H);hide();clearInterval(iv)});
+const iv=setInterval(()=>{if(H.n>=3){clearInterval(iv);return}
+ if(Date.now()-T0<35e3||Date.now()-H.t<WAIT[H.n]||document.hidden||!pn.hidden||document.querySelector("dialog[open]"))return;
+ H.n++;H.t=Date.now();ls.s(K,H);b.hidden=false;requestAnimationFrame(()=>b.classList.add("on"));tm=setTimeout(hide,7500)},15e3);
 })();
 </script>
 
