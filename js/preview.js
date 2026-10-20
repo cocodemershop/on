@@ -25,7 +25,7 @@ dl.innerHTML=`<div class="dkw"><div class="dkh"><h3>✦ Transformations-Vorschau
 <div class="pvcap"><h4 id="pvt"></h4><p id="pvp"></p></div>
 <div class="pvprog" aria-hidden="true"><i id="pvbar"></i></div>
 <div class="pvnav"><button class="btn o" id="pvpv" type="button" aria-label="Zurück">‹</button><div class="pvdt" id="pvdt">${S.map((_,i)=>`<button type="button" data-g="${i}" aria-label="Szene ${i+1}"></button>`).join("")}</div><button class="btn o" id="pvpl" type="button" aria-label="Pause">❚❚</button><button class="btn o" id="pvnx" type="button" aria-label="Weiter">›</button></div>
-<div class="pvcta"><div class="pr"><b>74,79 €</b><small>einmalig · kein Abo</small></div><a class="btn lg" href="${SHOP}" target="_blank" rel="noopener">✦ Jetzt kaufen</a></div>
+<div class="pvcta"><div class="pr"><b>89,90 €</b><small>einmalig · kein Abo</small></div><a class="btn lg" href="${SHOP}" target="_blank" rel="noopener">✦ Jetzt kaufen</a></div>
 <p class="pvn">Tarot dient der Reflexion und ersetzt keine medizinische, rechtliche oder finanzielle Beratung.</p></div>`;
 const $=id=>document.getElementById(id),sc=[...dl.querySelectorAll(".pvs")],dt=[...$("pvdt").children];
 let cur=-1,tm=0,playing=!rm,tw=0;

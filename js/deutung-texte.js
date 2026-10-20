@@ -26,7 +26,7 @@ const DeutungTexte = (function () {
   const CORE1 = [
     ["Deine Legung erzählt eine Bewegung nach oben: Aus Schwere wird Weite, aus Ungewissheit ein erster klarer Streifen Licht.",
      "Wie ein Fluss, der aus dem Gebirge in die Ebene tritt: Von {A} bis {C} wird dein Weg breiter und ruhiger.",
-     "Etwas in dir hat schon umgeparkt: Von „{kA}“ im Gestern führt dich die Legung zu „{kC}“ im Morgen, und das ist ein Aufstieg.",
+     "Etwas in dir hat schon umgeschaltet: Von „{kA}“ im Gestern führt dich die Legung zu „{kC}“ im Morgen, und das ist ein Aufstieg.",
      "Die Karten bauen dir eine Treppe: Unten liegt {A}, oben wartet {C}, und die Stufen dazwischen tragen bereits.",
      "Es zieht dich nach oben, leise und stetig, so wie Pflanzen zum Licht wachsen, ohne darüber nachzudenken.",
      "Der Verlauf dieser Legung ist ein Sonnenaufgang in drei Bildern: erst Dämmerung, dann Farbe, dann Tag."],
@@ -76,7 +76,7 @@ const DeutungTexte = (function () {
      "Das Morgen ist noch nicht geschrieben, nur der Ton ist angestimmt.", "Beachte das erste leise Unbehagen, es ist dein verlässlichster Wegweiser."],
     ["Dass du das hier liest, zeigt, dass du schon wieder hinaufschaust.", "Die Wende ist in den Karten längst angelegt.",
      "Aus dieser Tiefe wirst du später sagen: Hier hat es gedreht.", "Du musst jetzt nichts beweisen, nur nicht aufgeben.",
-     "Auf „{kB}“ folgt in deiner Legung „{kC}“, und das ist ein Hinweis, kein Zufall.", "Dieser Moment ist schwerer, als er ist, und kürzer, als er scheint."],
+     "Auf „{kB}“ folgt in deiner Legung „{kC}“, und das ist ein Hinweis, kein Zufall.", "Dieser Moment fühlt sich schwerer an, als er ist, und er dauert kürzer, als es scheint."],
     ["Wer jetzt entscheidet, entscheidet mit voller Kraft.", "Sag das Ja, das du schon lange im Mund trägst.",
      "Nutze das Licht, solange es so steht.", "Das, was du heute säst, trägt dich noch im Morgen.",
      "Du musst nicht alles tun, aber das Eine, das zählt, solltest du tun.", "Genieße es: Auch Gipfel dürfen Freude sein, nicht nur Aufgabe."],
@@ -98,7 +98,7 @@ const DeutungTexte = (function () {
     ["Halte durch: Die Wende ist in den Karten schon sichtbar.", "Tu heute nur das Nötigste, aber tu es gut. Mehr verlangt dieser Tag nicht.",
      "Suche dir einen Menschen oder einen Ort, der dich trägt, und geh dorthin.", "Schreibe drei Dinge auf, die trotz allem noch da sind.", "Gib dir die Erlaubnis, nicht stark sein zu müssen, und bleib trotzdem in Bewegung."],
     ["Triff jetzt deine Entscheidungen, solange du Rückenwind hast.", "Beginne heute das, was du verschoben hast. Die Kraft ist da.",
-     "Zeige dich, bitte, bewege: Heute öffnet sich mehr, als du fragst.", "Nutze die Stunde, in der alles leichter geht, für das Schwierigste.", "Halte das Gute fest, indem du es teilst."],
+     "Zeig dich, frag, beweg etwas: Heute öffnet sich mehr, als du erwartest.", "Nutze die Stunde, in der alles leichter geht, für das Schwierigste.", "Halte das Gute fest, indem du es teilst."],
     ["Bleib bei dem, was funktioniert.", "Mach das Gute zur Gewohnheit: Wiederhole heute, was dir zuletzt gelungen ist.",
      "Danke jemandem, der dich getragen hat.", "Vertraue dem Tempo, das du gerade hast.", "Pflege bewusst eine Sache, die gut läuft, statt nach der nächsten zu suchen."],
     ["Verkleinere deine Aufgaben und sorge für Ruhe.", "Streiche heute eine Sache von deiner Liste, ohne dich zu rechtfertigen.",
@@ -175,7 +175,7 @@ const DeutungTexte = (function () {
     L: [
       ["In der Liebe öffnet sich etwas: Nähe wird leichter, und du darfst mehr zeigen, als du dich bisher getraut hast.", "Herzensdinge kommen in Fluss: Wer jetzt weich wird, gewinnt mehr, als er verliert.", "In der Liebe darf es leichter werden. Zeig, was du fühlst, bevor du es schön formulierst.", "Beziehungen atmen auf. Eine Geste, ein Satz, ein Anruf genügt, um eine Tür weit aufzustoßen."],
       ["In der Liebe ist Ehrlichkeit dein Kompass: Sag, was du brauchst, bevor Schweigen es für dich entscheidet.", "Zwischen zwei Herzen zählt jetzt Klarheit mehr als Romantik. Sprich es freundlich, aber sprich es.", "Herzensdinge bleiben in der Schwebe: Gib ihnen Worte, dann bekommen sie Boden.", "In der Liebe gilt: Weder drängen noch verstecken. Zeig dich in genau der Dosis, die sich ehrlich anfühlt."],
-      ["In der Liebe wird es sensibel: Schütze dein Herz, ohne die Tür zuzuschlagen, und sprich Spannungen früh an.", "Das Herz ist empfindlich: Geh behutsam mit dir und mit anderen um, und sprich Heikles lieber heute als später.", "Beziehungen brauchen jetzt Zartheit. Wer leise anspricht, wird besser gehört als wer laut schweigt.", "In der Liebe ist Vorsicht keine Kälte. Du darfst Grenzen ziehen und trotzdem Wärme geben."]
+      ["In der Liebe wird es sensibel: Schütze dein Herz, ohne die Tür zuzuschlagen, und sprich Spannungen früh an.", "Das Herz ist empfindlich: Geh behutsam mit dir und mit anderen um, und sprich Heikles lieber heute als später.", "Beziehungen brauchen jetzt Zartheit. Wer leise anspricht, wird besser gehört, als wer laut schweigt.", "In der Liebe ist Vorsicht keine Kälte. Du darfst Grenzen ziehen und trotzdem Wärme geben."]
     ],
     B: [
       ["Beruflich steht der Wind günstig: Zeig dich, verhandle, starte das Projekt, das du aufgeschoben hast.", "Im Beruf öffnet sich ein Fenster: Bitte um das, was du verdienst, und sage zu, was dich wachsen lässt.", "Arbeit und Geld bekommen Rückenwind. Was du sichtbar machst, wird gesehen.", "Beruflich ist Zeit für Mut: Ein Gespräch, ein Angebot, ein Anfang, jetzt hat es Kraft."],
@@ -237,7 +237,7 @@ const DeutungTexte = (function () {
   const PP = [
     [["Im Gestern klingt sie wie ein Echo, das noch durch deine Räume zieht: {k} haben dich geprägt und dir etwas mitgegeben, das du jetzt bewusst tragen darfst.",
       "Das Gestern hat sie wie ein Siegel hinterlassen: {k} sind Teil deiner Geschichte geworden, und du darfst sie nun mit Absicht verwenden.",
-      "Aus dem Gestern reicht sie dir die Hand: {k} waren dein Lehrmeister, und du bist klüger aus ihnen hervorgegangen."],
+      "Aus dem Gestern reicht sie dir die Hand: {k} waren deine Lehrmeister, und du bist klüger aus ihnen hervorgegangen."],
      ["Umgekehrt zeigt sie, was im Gestern unausgesprochen blieb: {k} wurden nicht ganz gelebt oder verabschiedet. Was hier hängt, will gesehen werden, nicht gerichtet.",
       "Umgekehrt im Gestern: {k} haben Spuren hinterlassen, die noch nicht verheilt sind. Du darfst sie jetzt in Ruhe anschauen.",
       "Im Gestern liegt sie auf dem Kopf: {k} blieben unvollendet. Nicht als Schuld, sondern als offene Tür."]],
@@ -260,7 +260,7 @@ const DeutungTexte = (function () {
     ["Sie öffnet das Tor. Was mit „{a}“ begann und sich in „{b}“ verwandelte, mündet in ihr.", "Sie ist das Ziel des Bogens: „{a}“ und „{b}“ haben auf sie hingeführt.", "In ihr laufen die Fäden aus „{a}“ und „{b}“ zusammen und werden zu einem Muster."]
   ];
   const QQ = [
-    ["{K}: Was darf ich davon dankbar mitnehmen, und was gebe ich dem Gestern zurück?", "{K}: Welches Geschenk steckt im Gestern, das ich noch nicht ausgepackt habe?", "{K}: Was hat mich geprägt, und wofür bin ich heute bereit, loszulassen?", "{K}: Wem oder was aus dem Gestern möchte ich heute ein stilles Danke sagen?", "{K}: Welche Geschichte erzähle ich noch immer, obwohl sie längst weitergeschrieben ist?"],
+    ["{K}: Was darf ich davon dankbar mitnehmen, und was gebe ich dem Gestern zurück?", "{K}: Welches Geschenk steckt im Gestern, das ich noch nicht ausgepackt habe?", "{K}: Was hat mich geprägt, und was bin ich heute bereit loszulassen?", "{K}: Wem oder was aus dem Gestern möchte ich heute ein stilles Danke sagen?", "{K}: Welche Geschichte erzähle ich noch immer, obwohl sie längst weitergeschrieben ist?"],
     ["{K}: Wo zeigen sie sich in diesem Moment, und was brauchen sie von mir?", "{K}: Was würde sich ändern, wenn ich heute einen Hauch mehr davon zuließe?", "{K}: Wo spüre ich es gerade im Körper, und was möchte es mir sagen?", "{K}: Welche kleine Geste würde heute genau dazu passen?", "{K}: Was tue ich gerade aus Gewohnheit, das nicht mehr zu mir passt?"],
     ["{K}: Welchen einen Schritt gehe ich zuerst, damit sie sich entfalten können?", "{K}: Wie sähe ein Tag aus, an dem das schon selbstverständlich ist?", "{K}: Was kann ich heute vorbereiten, damit das Morgen leichter ankommt?", "{K}: Wem möchte ich davon erzählen, damit es Wirklichkeit wird?", "{K}: Was würde mein künftiges Ich mir heute zuflüstern?"]
   ];
@@ -289,11 +289,11 @@ const DeutungTexte = (function () {
   const FORMEN = ["brief", "raetsel", "ritual", "rueckblick", "prophezeiung", "farbe", "karte4"];
   const OPEN = [
     "Gezogen {t}, an einem {w}, dem Tag {p}, unter {md}.",
-    "Diese Legung entstand {t}, an einem {w}. Der Tag gehört {p}, am Himmel steht {mn}.",
-    "{t}, ein {w}, der Tag {p}, dazu {mn}: Diese Konstellation gab es genau so nie zuvor.",
+    "Diese Legung entstand {t}, an einem {w}. Es ist der Tag {p}, und am Himmel steht {mn}.",
+    "Jetzt, {t}, an einem {w}, dem Tag {p}, dazu {mn}: Diese Konstellation gab es genau so nie zuvor.",
     "Als du die Karten gezogen hast, war es {t}. Ein {w}, der Tag {p}, begleitet von {md}.",
     "Der Moment dieser Legung: {t}, {w}, Tag {p}, am Himmel {mn}.",
-    "Genau jetzt, {t}, an diesem {w}, steht der Tag {p} im Zeichen von {md}.",
+    "Genau jetzt, {t}, an diesem {w}, steht der Tag {p} unter {md}.",
     "Dein Zeitpunkt ist Teil der Deutung: {t}, {w}, Tag {p}. Dazu zeigt sich {mn}.",
     "Heute, {t}: ein {w}, der Tag {p}, unter {md}. Die Karten haben sich ihre Stunde gut gewählt."
   ];
@@ -307,12 +307,12 @@ const DeutungTexte = (function () {
     ["Saturn gibt diesem Tag Tiefe, Struktur und Ernsthaftigkeit.", "Am Saturntag zahlt sich aus, was du mit Geduld aufgebaut hast.", "Saturntage fragen: Was trägt dich wirklich, wenn es drauf ankommt?"]
   ];
   const UNIQ = [
-    "Genau diese Legung, mit diesen Karten, in dieser Reihenfolge und Ausrichtung, gibt es nur 1 von {n} Möglichkeiten.",
+    "Genau diese Legung, mit diesen Karten, in dieser Reihenfolge und Ausrichtung, ist nur eine von {n} Möglichkeiten.",
     "Es gibt {n} verschiedene Wege, drei Karten zu ziehen. Du hast genau diesen einen bekommen.",
     "Wenn du diese Legung noch einmal ziehen wolltest, müsstest du im Schnitt {n} Mal neu mischen.",
     "1 zu {n}: So selten ist genau diese Legung. Sie gehört in dieser Form nur dir und diesem Moment."
   ];
-  const LETTER_OPEN = ["Liebe Du von heute,", "An dich, die oder den Mutigen,", "Hallo, ich bin dein Morgen,", "Du da im Jetzt,", "Hör zu, ich schreibe dir von weiter vorn,"];
+  const LETTER_OPEN = ["Liebes Du von heute,", "An dich, die oder den Mutigen,", "Hallo, ich bin dein Morgen,", "Du da im Jetzt,", "Hör zu, ich schreibe dir von weiter vorn,"];
   const LETTER_BODY = [
     "ich bin {C}, und ich wollte dir sagen: „{kC}“ ist näher, als es von dort aus aussieht. Du hast „{kB}“ gerade als Gegenwart, aber ich sehe, wie es sich verwandelt.",
     "von hier aus ist {B} nur noch eine Erinnerung, ein Anlauf. Was jetzt noch schwer scheint, hat sich bei mir in „{kC}“ verwandelt. Mach weiter.",
@@ -333,8 +333,8 @@ const DeutungTexte = (function () {
   const RITUAL = {
     0: ["Reibe deine Handflächen aneinander, bis sie warm werden. Lege sie auf dein Herz und sprich innerlich: „{w}“.", "Zünde, wenn du magst, eine Kerze an und schau eine Minute in die Flamme. Sie trägt „{w}“ in sich.", "Stelle dich aufrecht hin, spüre die Wärme in deinem Bauch und sag dreimal leise: „{w}“."],
     1: ["Trinke langsam ein Glas Wasser und stelle dir vor, dass jeder Schluck „{w}“ in dich hineinträgt.", "Halte die Hände unter fließendes Wasser und lass dabei los, was dir zu schwer ist. Sag danach: „{w}“.", "Schließe die Augen, atme tief aus und stell dir einen stillen See vor, auf dem „{w}“ schwimmt."],
-    2: ["Öffne ein Fenster. Atme drei Mal tief ein und aus und lass bei jedem Ausatmen einen Gedanken ziehen. Das Wort dazu: „{w}“.", "Schreibe das Wort „{w}“ auf einen Zettel und lege ihn dorthin, wo du ihn morgen früh siehst.", "Sprich laut aus, was du dir vornimmst, und beende den Satz mit „{w}“."],
-    3: ["Stelle dich barfuß hin und spüre den Boden, als würdest du Wurzeln schlagen. Atme ruhig und sprich: „{w}“.", "Lege eine Hand auf deinen Bauch, die andere auf die Brust. Atme sechs Mal in die Mitte und denke „{w}“.", "Gehe eine Minute langsam im Raum umher, Schritt für Schritt, und wiederhole innerlich „{w}“."],
+    2: ["Öffne ein Fenster. Atme dreimal tief ein und aus und lass bei jedem Ausatmen einen Gedanken ziehen. Das Wort dazu: „{w}“.", "Schreibe das Wort „{w}“ auf einen Zettel und lege ihn dorthin, wo du ihn morgen früh siehst.", "Sprich laut aus, was du dir vornimmst, und beende den Satz mit „{w}“."],
+    3: ["Stelle dich barfuß hin und spüre den Boden, als würdest du Wurzeln schlagen. Atme ruhig und sprich: „{w}“.", "Lege eine Hand auf deinen Bauch, die andere auf die Brust. Atme sechsmal in die Mitte und denke „{w}“.", "Gehe eine Minute langsam im Raum umher, Schritt für Schritt, und wiederhole innerlich „{w}“."],
     9: ["Sieh dir die Karten noch einmal an, schließe die Augen und frag dich: Welches Bild bleibt? Das ist dein Wort für heute: „{w}“.", "Lege deine Hand auf dein Herz, atme tief durch und sprich dreimal: „{w}“. Dann öffne die Augen.", "Sprich „{w}“ leise zu dir selbst, so als würdest du es jemandem schenken, den du liebst."]
   };
   const RITUAL_T = ["Das 60-Sekunden-Ritual", "Eine Minute für dich", "Dein kleines Ritual"];
@@ -397,7 +397,7 @@ const DeutungTexte = (function () {
   const MOON_D = ["dem Neumond", "der zunehmenden Sichel", "dem ersten Viertel", "dem zunehmenden Mond", "dem Vollmond", "dem abnehmenden Mond", "dem letzten Viertel", "der abnehmenden Sichel"];
   /* ------------------------------------------------------------------ Erweiterungen kleiner Pools */
   UNIQ.push(
-    "Von {n} möglichen Legungen hast du genau diese erhalten: dieselben Karten, dieselbe Reihenfolge, dieselbe Ausrichtung kommt nur einmal darin vor.",
+    "Von {n} möglichen Legungen hast du genau diese erhalten: Diese Kombination aus Karten, Reihenfolge und Ausrichtung kommt nur einmal darin vor.",
     "Rechnerisch gibt es {n} Wege, drei Karten aus 78 mit Ausrichtung zu ziehen. Dieser eine ist jetzt deiner.",
     "Die Wahrscheinlichkeit für genau diese Legung liegt bei 1 zu {n}. Kein Zufall ist so genau, wie dieser hier aussieht.",
     "Wärst du ein Würfel mit {n} Seiten, du wärst genau auf dieser gelandet.");
@@ -437,9 +437,9 @@ const DeutungTexte = (function () {
     "Behalte die Karte, bei der dein Herz einen kleinen Satz gemacht hat. Sie ist nicht zufällig deine.",
     "Wenn du heute Nacht schlafen gehst, nimm ein einziges Wort aus dieser Legung mit. Es wird bei dir wachen.",
     "Der Zauber ist nicht in den Karten. Er ist in dem Moment, in dem du hingeschaut hast.",
-    "Jetzt, genau jetzt, hat sich eine kleine Tür in dir aufgelegt. Du musst sie nur nicht sofort durchschreiten.",
+    "Jetzt, genau jetzt, hat sich eine kleine Tür in dir aufgetan. Du musst sie nicht sofort durchschreiten.",
     "Es gibt Antworten, die man nicht lösen, sondern leben muss. Diese hier gehört dazu.",
-    "Bevor du gehst: Sag dir leise „Danke“. Nicht den Karten, sondern der, die oder dem, der sie gelesen hat.");
+    "Bevor du gehst: Sag dir leise „Danke“. Nicht den Karten, sondern dir, denn du hast sie gelesen.");
 
   /* Zweiteilige Sätze: ganze Sätze wiederholen sich so erst nach Vielfachen der Pool-Größe */
   const HINT2 = ["Es genügt ein einziger Satz.", "Die Karten hören genau zu.", "Das Ziehen dauert nur einen Atemzug.", "Je klarer die Frage, desto leuchtender die Antwort.", "Du musst nichts erklären, nur benennen.", "Probiere es beim nächsten Ziehen aus.", "Die Legung wird dadurch erstaunlich persönlich.", "Ein Wort wie „Liebe“ oder „Arbeit“ reicht schon."];

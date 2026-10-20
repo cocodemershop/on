@@ -5,7 +5,7 @@ const root=document.getElementById("zdk");if(!root)return;
 const V="\uFE0E";
 const Z=[
 ["♈","Widder","21. März – 19. April","Feuer","Kardinal","Mars","Der Herrscher","#ff9a6b","Mut, Anfang und Tatkraft: Der Widder öffnet die Tür und geht als Erster hindurch.","Wofür lohnt es sich, jetzt den ersten Schritt zu gehen?"],
-["♉","Stier","20. April – 20. Mai","Erde","Fix","Venus","Der Hohepriester","#9fcf86","Beständigkeit, Genuss und Verlässlichkeit: Der Stier lädt dich ein, im Körper anzukommen.","Was nährt mich wirklich, und was darf ich mir gönnen?"],
+["♉","Stier","20. April – 20. Mai","Erde","Fix","Venus","Der Hierophant","#9fcf86","Beständigkeit, Genuss und Verlässlichkeit: Der Stier lädt dich ein, im Körper anzukommen.","Was nährt mich wirklich, und was darf ich mir gönnen?"],
 ["♊","Zwillinge","21. Mai – 20. Juni","Luft","Veränderlich","Merkur","Die Liebenden","#ffe27a","Neugier, Austausch und Leichtigkeit: Die Zwillinge sehen immer zwei Seiten und lieben das Gespräch.","Was möchte ich gerade lernen, sagen oder erzählen?"],
 ["♋","Krebs","21. Juni – 22. Juli","Wasser","Kardinal","Mond","Der Wagen","#a9c6ff","Geborgenheit, Gefühl und Fürsorge: Der Krebs erinnert dich an dein inneres Zuhause.","Wo darf ich mir selbst ein sicherer Hafen sein?"],
 ["♌","Löwe","23. Juli – 22. August","Feuer","Fix","Sonne","Die Kraft","#ffb347","Herz, Ausdruck und Großzügigkeit: Der Löwe zeigt, was in dir leuchten will.","Was bringt mich zum Strahlen, ohne dass ich es beweisen muss?"],
